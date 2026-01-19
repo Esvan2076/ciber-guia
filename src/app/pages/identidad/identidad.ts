@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { VideoSectionComponent } from '../../components/video-section/video-section';
+
 @Component({
   selector: 'app-identidad',
   standalone: true,
+  imports: [VideoSectionComponent],
   template: `
     <section class="bg-gradient-to-br from-purple-600 via-indigo-600 to-violet-500 py-16 md:py-24 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -86,6 +89,8 @@ import { Component } from '@angular/core';
             </div>
           </div>
         </div>
+
+        <app-video-section videoId="d5t1UbR9OLk" title="Robo de identidad: Protege tu cuenta digital"/>
 
         <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-8 md:p-12 border border-purple-100">
           <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">¿Tu cuenta fue comprometida?</h2>

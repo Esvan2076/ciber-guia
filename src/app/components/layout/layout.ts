@@ -4,11 +4,11 @@ import { HeaderComponent } from '../header/header';
 import { FooterComponent } from '../footer/footer';
 
 @Component({
-    selector: 'app-layout',
-    standalone: true,
-    imports: [RouterOutlet, HeaderComponent, FooterComponent],
-    template: `
-    <div class="min-h-screen flex flex-col bg-gray-50">
+  selector: 'app-layout',
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  template: `
+    <div class="min-h-screen flex flex-col bg-gray-50 pt-16">
       <app-header />
       <main class="flex-1">
         <router-outlet />

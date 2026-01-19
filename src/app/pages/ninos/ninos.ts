@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { VideoSectionComponent } from '../../components/video-section/video-section';
+
 @Component({
   selector: 'app-ninos',
   standalone: true,
+  imports: [VideoSectionComponent],
   template: `
     <section class="bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 py-16 md:py-24 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -104,6 +107,8 @@ import { Component } from '@angular/core';
             </div>
           </div>
         </div>
+
+        <app-video-section videoId="rHDTJQKW2y8" title="Privacidad en redes: No compartas datos personales"/>
 
         <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 md:p-12 border border-emerald-100">
           <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">¿Tu hijo está en riesgo?</h2>

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { VideoSectionComponent } from '../../components/video-section/video-section';
+
 @Component({
   selector: 'app-extorsion',
   standalone: true,
+  imports: [VideoSectionComponent],
   template: `
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-red-600 via-red-500 to-orange-500 py-16 md:py-24 relative overflow-hidden">
@@ -107,6 +110,8 @@ import { Component } from '@angular/core';
             </div>
           </div>
         </div>
+
+        <app-video-section videoId="ZqhCvKTK98U" title="Extorsión o fraude telefónico: No entregues tus claves" />
 
         <!-- Emergency Contacts -->
         <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 md:p-12 border border-red-100">

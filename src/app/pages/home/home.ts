@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'app-home',
-    standalone: true,
-    imports: [RouterLink],
-    template: `
+  selector: 'app-home',
+  standalone: true,
+  imports: [RouterLink],
+  template: `
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-600 overflow-hidden">
       <!-- Background Pattern -->
@@ -198,6 +198,33 @@ import { RouterLink } from '@angular/router';
             <span class="text-2xl font-extrabold text-gray-900">33 3837 6000</span>
             <p class="text-gray-600 mt-2 font-medium">Policía Cibernética</p>
             <p class="text-gray-400 text-sm mt-1">Delitos digitales</p>
+          </div>
+        </div>
+
+        <!-- Denuncia Online Section -->
+        <div class="mt-12 max-w-2xl mx-auto">
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center">
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-[#1877F2] to-[#0866FF] rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Denuncia en Línea</h3>
+              <p class="text-gray-600 mb-6 max-w-md">Reporta delitos cibernéticos directamente a la Policía Cibernética de Jalisco a través de su página oficial de Facebook.</p>
+              <a href="https://www.facebook.com/CiberneticaJal" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center gap-3 bg-gradient-to-r from-[#1877F2] to-[#0866FF] text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>Ir a Facebook de Policía Cibernética</span>
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>

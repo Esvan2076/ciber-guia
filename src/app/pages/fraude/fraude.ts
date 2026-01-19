@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { VideoSectionComponent } from '../../components/video-section/video-section';
+
 @Component({
   selector: 'app-fraude',
   standalone: true,
+  imports: [VideoSectionComponent],
   template: `
     <section class="bg-gradient-to-br from-amber-500 via-yellow-500 to-orange-400 py-16 md:py-24 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -81,6 +84,8 @@ import { Component } from '@angular/core';
             </div>
           </div>
         </div>
+
+        <app-video-section videoId="Q9vQ34Ts8GE" title="Fraude en compras: Verifica antes de pagar" />
 
         <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 md:p-12 border border-amber-100">
           <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">¿Fuiste víctima de fraude?</h2>

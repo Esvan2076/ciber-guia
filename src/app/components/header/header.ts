@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  template: `
-    <header class="bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-700 shadow-xl sticky top-0 z-50">
+    selector: 'app-header',
+    standalone: true,
+    imports: [RouterLink, RouterLinkActive],
+    template: `
+    <header class="bg-gradient-to-r from-[#003E52] via-[#00506b] to-cyan-600 shadow-xl fixed top-0 left-0 w-full z-50">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
@@ -17,7 +17,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
               </svg>
             </div>
             <span class="text-white font-bold text-lg tracking-tight hidden sm:block">
-              Ciber-Guía <span class="text-cyan-300">Zapopan</span>
+              Ciber-Guía <span class="text-zapopan-accent">ITESM</span>
             </span>
           </a>
 
@@ -87,9 +87,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   `
 })
 export class HeaderComponent {
-  isMenuOpen = false;
+    isMenuOpen = false;
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
+    toggleMenu() {
+        this.isMenuOpen = !this.isMenuOpen;
+    }
 }
